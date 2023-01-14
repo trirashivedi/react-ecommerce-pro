@@ -27,11 +27,12 @@ const HeroSection = ({myData}) => {
 
           <div className="hero-section-image">
             <figure>
-              <img
+            <input type="image" img src = {'images/hero.jpg'} alt="photo" />
+              {/* <img
                 src="images/hero.jpg"
                 alt="hero image"
                 className="img-style"
-              />
+              /> */}
             </figure>
           </div>
         </div>
