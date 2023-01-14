@@ -7,7 +7,7 @@ const ListView = ({products}) => {
     <Wrapper className="section">
         <div className='container grid'>
             {products.map((curElem) =>{
-                const {id, name,image,price,description} = curElem;
+                const {name,image,price,description} = curElem;
                 return(
                 <div className='card listview-col '>
                         <figure>

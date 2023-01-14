@@ -21,21 +21,22 @@ const SingleProduct = () => {
      const { id } = useParams();
 
       const {
-        id: alias,
+        id: rashi,
         name,
         company,
         price,
         description,
-        category,
+        //category,
         stock,
         stars,
         reviews,
         image
       } = singleProduct;
+      console.log(rashi);
 
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`);
-  }, []);
+  }, [getSingleProduct, id]);
 
 
   if(isSingleLoading){
