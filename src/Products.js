@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ProductList from "./components/ProductList";
 import Sort from "./components/Sort";
 import FilterSection from "./components/FilterSection";
-//simport {useFilterContext} from "./context/Filter_context";
+//import {useFilterContext} from "./context/Filter_context";
 
 const Products = () => {
   return <Wrapper>

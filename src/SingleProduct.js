@@ -5,7 +5,7 @@ import { useProductContext } from "./context/productcontext";
 import PageNavigation from "./components/PageNavigation";
 import MyImage from "./components/MyImage";
 import { Container } from "./styles/Container";
-import FormatePrice from "./Helpers/FormatePrice";
+import FormatePrice from "./Helpers/FormatPrice";
 import { TbReplace, TbTruckDelivery } from "react-icons/tb";
 import { MdSecurity } from "react-icons/md";
 import Star from "./components/Star";

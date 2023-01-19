@@ -8,7 +8,7 @@ const Footer = () => {
   return (
       <Wrapper>
         <section className="contact-short">
-          <div className="grid grid-two-column grid-col">
+          <div className="grid contact-short-code grid-col">
             <div>
               <h3>Ready to get started?</h3>
               <h3>Talk to us today</h3>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    rel="noreferrer" 
+                    rel="noreferrer"
                     target="_blank">
                     <FaYoutube className="icons" />
                   </a>
@@ -131,8 +131,17 @@ const Wrapper = styled.section`
       height: 0.1px;
     }
   }
-  grid-col{
+  .grid-col{
     justify-content:space-between !important;
+  }
+
+  .contact-short-code{
+    justify-content:space-between !important;
+    display:flex;
+  }
+
+  .card.listview-col .card-data{
+    max-width:50% !important;
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .contact-short {

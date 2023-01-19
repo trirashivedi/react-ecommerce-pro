@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import FormatePrice from '../Helpers/FormatePrice';
+import FormatePrice from '../Helpers/FormatPrice';
 
 const ListView = ({products}) => {
   return (
@@ -40,7 +40,7 @@ const Wrapper = styled.section`
   }
   figure {
     width: auto;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -65,20 +65,24 @@ const Wrapper = styled.section`
     }
     img {
       max-width: 90%;
-      margin-top: 1.5rem;
-      height: 20rem;
+      width:350px;
+      margin-top: 1.2rem;
+      height: 22rem;
       transition: all 0.2s linear;
     }
   }
 
-  .listview-col{
-    display:flex;
+ .listview-col{
+    display:flex !important;
+    justify-content:space-between;
   }
+
   .card {
     border: 0.1rem solid rgb(170 170 170 / 40%);
-    .card-data {
-      padding: 0 2rem;
-    }
+       .card-data {
+          padding: 0 2rem;
+         width:50%;
+     }
     h3 {
       margin: 2rem 0;
       font-weight: 300;
