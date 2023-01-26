@@ -58,4 +58,4 @@ const useProductContext = () => {
   return useContext(AppContext);
 };
 
-export { AppProvider, AppContext, useProductContext }; 
+export { AppProvider, AppContext, useProductContext };
